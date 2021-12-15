@@ -1,0 +1,8 @@
+Tile matrix sets in the file attached 
+•	in file “northpoleLAEAeurope.json” tile matrix set for the North Pole LAEA Europe projection 
+•	also tile matrix sets for other North Pole LAEA projections
+•	those tile matrix set definition files are used by our custom software, but JSON structure should be self-descriptive
+•	or tile matrix sets can be read also from WMTS capabilities, link below WMTS capabilities (tile matrix set definitions can be read also from this resource):
+	https://beta-karttakuva.maanmittauslaitos.fi/vt/asdi/wmts?service=WMTS&request=GetCapabilities&version=1.0.0 
+ 
+ 
