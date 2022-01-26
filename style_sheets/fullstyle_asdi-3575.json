@@ -1,0 +1,657 @@
+{
+  "version": 8,
+  "metadata": {
+    "mapbox:type": "template",
+    "mapbox:autocomposite": false
+  },
+  "sources": {
+    "vt-source": {
+      "type": "vector",
+      "minzoom": 7,
+      "maxzoom": 15,
+      "tiles": [
+      ]
+    }
+  },
+  "sprite": ,
+  "glyphs": ,
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(247, 247, 210, 1)"
+      }
+    },
+    {#Mandatory Layerorder:1
+      "id": "WoodForest",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "WoodForest",
+      "paint": {
+        "fill-color": "rgba(211, 235, 173, 1)"
+      }
+    },
+    {#Mandatory Layerorder:2
+      "id": "BuildupAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "BuildupAreas",
+      "paint": {
+        "fill-color": "rgba(250, 217, 188, 1)"
+      }
+    },
+    {#Optional Layerorder:2-1
+      "id": "BuildupAreasSymbols",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "BuildupAreasSymbols",
+      "paint": {
+        "fill-color": "rgba(150, 150, 150, 1)"
+      }
+    },
+    {#Optional Layerorder:3
+      "id": "AgriculturalAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "AgriculturalAreas",
+      "paint": {
+        "fill-color": "rgba(254, 247, 163, 1)"
+      }
+    },
+    {#Optional Layerorder:4
+      "id": "UnclassifiedAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "UnclassifiedAreas",
+      "paint": {
+        "fill-color": "rgba(247, 247, 210, 1)"
+      }
+    },
+    {#Optional Layerorder:5
+      "id": "SoilSurfaceRegions",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "SoilSurfaceRegions",
+      "paint": {
+        "fill-color": "rgba(224, 224, 224, 1)"
+      }
+    },
+    {#Optional Layerorder:5-1
+      "id": "SoilSurfaceRegionsRocky",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "SoilSurfaceRegionsRocky",
+      "paint": {
+        "fill-color": "rgba(224, 224, 224, 1)"
+      }
+    },
+    {#Optional Layerorder:5-2
+      "id": "SoilSurfaceRegionsMoraines",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "SoilSurfaceRegionsMoraines",
+      "paint": {
+        "fill-pattern": "SoilSurfaceRegionsMoraines",
+        "fill-opacity": 0.5
+      }
+    },
+    {#Optional Layerorder:5-3
+      "id": "SoilSurfaceRegionsSand",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "SoilSurfaceRegionsSand",
+      "paint": {
+        "fill-pattern": "SoilSurfaceRegionsSand",
+        "fill-opacity": 0.5
+      }
+    },
+    {#Optional Layerorder:6
+      "id": "ShrubVegetation",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "ShrubVegetation",
+      "paint": {
+        "fill-color": "rgba(214, 252, 188, 1)"
+      }
+    },
+    {#Optional Layerorder:7
+      "id": "GrassVegetation",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "GrassVegetation",
+      "paint": {
+        "fill-color": "rgba(232, 248, 190, 1)"
+      }
+    },
+    {#Optional Layerorder:8
+      "id": "TundraVegetation",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "TundraVegetation",
+      "paint": {
+        "fill-color": "rgba(230, 235, 210, 1)"
+      }
+    },
+    {#Mandatory Layerorder:9
+      "id": "GlacierSnowfields",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "GlacierSnowfields",
+      "paint": {
+        "fill-color": "rgba(254, 254, 254, 1)"
+      }
+    },
+    {#Optional Layerorder:9-1
+      "id": "GlacierSnowfieldsFossile",
+      "type": "fill",
+      "source": "vt-source"
+      "source-layer": "GlacierSnowfieldsFossile",
+      "paint": {
+        "fill-pattern": "GlacierSnowfieldsFossile",
+        "fill-opacity": 0.5
+      }
+    },
+    {#Optional Layerorder:10
+      "id": "AerodromeAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "AerodromeAreas",
+      "paint": {
+        "fill-color": "rgba(250, 217, 188, 1)"
+      }
+    },
+    {#Optional Layerorder:11-1
+      "id": "WetlandsBg",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "Wetlands",
+      "paint": {
+        "fill-color": "rgba(247, 247, 210, 1)"
+      }
+    },
+    {#Mandatory Layerorder:11
+      "id": "Wetlands",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "Wetlands",
+      "paint": {
+        "fill-pattern": "wetland",
+        "fill-opacity": 0.5
+      }
+    },
+    {#Mandatory Layerorder:12 ???????????????????Should HillShade be from same source
+      "id": "HillShade",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "HillShade",
+      "paint": {
+        "fill-opacity": 0.7
+      }
+    },
+    {#Mandatory Layerorder:13                    Here outline-color don't dissapear at specified scale if wanted you need to specify an id for that
+      "id": "WatercourseAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "WatercourseAreas",
+      "paint": {
+        "fill-color": "rgba(194, 233, 252, 1)",
+        "fill-outline-color": "rgba(137, 212, 250, 0.5)"
+      }
+    },
+    {#Mandatory Layerorder:14                    Here outline-color don't dissapear at specified scale if wanted you need to specify an id for that
+      "id": "Waterbodies",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "Waterbodies",
+      "paint": {
+        "fill-color": "rgba(194, 233, 252, 1)",
+        "fill-outline-color": "rgba(137, 212, 250, 0.5)"
+      }
+    },
+    {#Mandatory Layerorder:15
+      "id": "Sea",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "Sea",
+      "paint": {
+        "fill-color": "rgba(194, 233, 252, 1)"
+      }
+    },
+    {#Mandatory Layerorder:16
+      "id": "WatercourseLines",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "WatercourseLines",
+      "paint": {
+        "line-color": "rgba(137, 212, 250, 1)",
+        "line-width": 1.0
+      }
+    },
+    {#Mandatory Layerorder:17
+      "id": "Coastline",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "Coastline",
+      "paint": {
+        "line-color": "rgba(137, 212, 250, 1)",
+        "line-width": 0.5
+      }
+    },
+    {#Optional Layerorder:17-1 ????????????How to make the linesymbol?
+      "id": "CoastlineSteep",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "CoastlineSteep",
+      "paint": {
+        "line-color": "rgba(137, 212, 250, 1)",
+        "line-width": 0.5,
+        "line-offset": 3
+      }
+    },
+    {#Mandatory Layerorder:18
+      "id": "TerrainContours",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "TerrainContours",
+      "paint": {
+        "line-color": "rgba(220, 150, 80, 1)",
+        "line-width": 0.2
+      }
+    },
+    {#Mandatory Layerorder:19
+      "id": "GlacierContours",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "GlacierContours",
+      "paint": {
+        "line-color": "rgba(18, 175, 248, 1)",
+        "line-width": 0.2
+      }
+    },
+    {#Mandatory Layerorder:20
+      "id": "ProtectedSites",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "ProtectedSites",
+      "paint": {
+        "line-color": "rgba(11, 116, 45, 1)",
+        "line-width": 1.5,
+        "line-opacity": 0.5
+      }
+    },
+    {#Mandatory Layerorder:21
+      "id": "FerryCrossings",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "FerryCrossings",
+      "paint": {
+        "line-color": "rgba(123, 179, 234, 1)",
+        "line-width": 1.0,
+        "line-dasharray": [6,5]
+      }
+    },
+    {#Mandatory Layerorder:22-1
+      "id": "MainRoadsCasing",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "MainRoads",
+      "paint": {
+        "line-color": "rgba(150, 150, 150, 1)",
+        "line-width": 3.0
+      }
+    },
+    {
+      "id": "MainRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "MainRoads",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 2.0
+      }
+    },
+    {#Optional Layerorder:22-1
+      "id": "MainRoadsTunnelCasing",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "MainRoadsTunnel",
+      "paint": {
+        "line-color": "rgba(150, 150, 150, 1)",
+        "line-width": 3.0,
+        "line-dasharray": [6,4]
+      }
+    },
+    {
+      "id": "MainRoadsTunnel",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "MainRoadsTunnel",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 2.0,
+        "line-dasharray": [6,4]
+      }
+    },
+    {#Mandatory Layerorder:22-2
+      "id": "RegionalRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "RegionalRoads",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 2.0
+      }
+    },
+    {#Optional Layerorder:22-2
+      "id": "RegionalRoadsTunnel",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "RegionalRoadsTunnel",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 2.0,
+        "line-dasharray": [6,4]
+      }
+    },
+    {#Mandatory Layerorder:22-3
+      "id": "LocalRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "LocalRoads",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 0.8
+      }
+    },
+    {#Optional Layerorder:22-3
+      "id": "LocalRoadsTunnel",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "LocalRoadsTunnel",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 0.8,
+        "line-dasharray": [6,4]
+      }
+    },
+    {#Optional Layerorder:22-4
+      "id": "NonRegularRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "NonRegularRoads",
+      "paint": {
+        "line-color": "rgba(150, 150, 150, 1)",
+        "line-width": 3,
+        "line-dasharray": [6,4]
+      }
+    },
+    {#Optional Layerorder:23
+      "id": "RailwayLines",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "RailwayLines",
+      "paint": {
+        "line-color": "rgba(160, 160, 160, 1)",
+        "line-width": 1.8
+      }
+    },
+    {#Optional
+      "id": "RailwayLinesTunnel",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "RailwayLinesTunnel",
+      "paint": {
+        "line-color": "rgba(160, 160, 160, 1)",
+        "line-width": 1.8,
+        "line-dasharray": [6,4]
+      }
+    },
+    {#Optional Layerorder:24
+      "id": "RunwayLines",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "RunwayLines",
+      "paint": {
+        "line-color": "rgba(133, 133, 133, 1)",
+        "line-width": 2.0
+      }
+    },
+    {#Optional Layerorder:25??????????????How to make the linesymbol
+      "id": "SoilSurfaceRegionsRockyLine",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "SoilSurfaceRegionsRockyLine",
+      "paint": {
+        "line-color": "rgba(150, 150, 150, 1)",
+        "line-width": 0.5,
+        "line-offset": 3.0
+      }
+    },
+    {#Optional Layerorder:26
+      "id": "SoilSurfaceRegionsMorainesLine",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "SoilSurfaceRegionsMorainesLine",
+      "paint": {
+        "line-color": "rgba(150, 150, 150, 1)",
+        "line-width": 2.0,
+        "line-dasharray": [2,3]
+      }
+    },
+    {#Optional Layerorder:27
+      "id": "GlacierSnowfieldsFossileLine",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "GlacierSnowfieldsFossileLine",
+      "paint": {#line-offset
+        "fill-pattern": "GlacierSnowfieldsFossileLine",
+        "fill-opacity": 0.5
+      }
+    },
+    {#Mandatory Layerorder:28
+      "id": "Sub-NationalBoundaries",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "Sub-NationalBoundaries",
+      "paint": {
+        "line-color": "rgba(152, 102, 152, 1)",
+        "line-width": 1.0
+      }
+    },
+    {#Mandatory Layerorder:29
+      "id": "NationalBoundariesCasing",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "NationalBoundaries",
+      "paint": {
+        "line-color": "rgba(217, 217, 217, 1)",
+        "line-width": 6.0,
+        "line-opacity": 0.5
+      }
+    },
+    {#Mandatory Layerorder:29
+      "id": "NationalBoundaries",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "NationalBoundaries",
+      "paint": {
+        "line-color": "rgba(152, 102, 152, 1)",
+        "line-width": 2.0,
+        "line-opacity": 0.5
+      }
+    },
+    {#Optional Layerorder:30
+      "id": "RailwayStations",
+      "type": "circle",
+      "source": "vt-source",
+      "source-layer": "RailwayStations",
+      "paint": {
+        "circle-color": "rgba(160, 160, 160, 1)",
+        "circle-radius": 4.0
+      }
+    },
+    {#Optional Layerorder:31
+      "id": "PopulatedPlace",
+      "type": "circle",
+      "source": "vt-source",
+      "source-layer": "PopulatedPlace",
+      "paint": {
+        "circle-color": "rgba(250, 217, 188, 1)",
+        "circle-radius": 4.0
+      }
+    },
+    {#Mandatory Layerorder:32
+      "id": "Airports",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "Airports",
+      "layout":{
+        "icon-image": "airports", 
+        "icon-size": 0.8
+      },
+      "paint": {
+        "icon-opacity": 0.65
+      }
+    },
+    {#Mandatory Layerorder:33
+      "id": "Heliports",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "Heliports",
+      "layout":{
+        "icon-image": "heliports", 
+        "icon-size": 0.8
+      },
+      "paint": {
+        "icon-opacity": 0.65
+      }
+    },
+    {#Mandatory Layerorder:34
+      "id": "SeaplaneBases",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "SeaplaneBases",
+      "layout":{
+        "icon-image": "seaplanebases", 
+        "icon-size": 0.8
+      },
+      "paint": {
+        "icon-opacity": 0.65
+      }
+    },
+    {#Mandatory Layerorder:35
+      "id": "Ports",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "Ports",
+      "layout":{
+        "icon-image": "ports", 
+        "icon-size": 0.8
+      },
+      "paint": {
+        "icon-opacity": 0.65
+      }
+    },
+    {#Mandatory Layerorder:36
+      "id": "GeographicalNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "GeographicalNames",
+      "layout":{
+        "text-field": "{text}",
+        "text-font": [
+          "Noto Sans Regular"
+        ], 
+        "text-size": [
+            "get",
+            "fontsize"
+        ],
+        "text-anchor": [
+          "get",
+          "position"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(70,70,70,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+    {#Mandatory Layerorder:37
+      "id": "HydrographyNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "HydrographyNames",
+      "layout":{
+        "text-field": "{text}",
+        "text-font": [
+          "Noto Sans Regular"
+        ], 
+        "text-size": [
+            "get",
+            "fontsize"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(0,92,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "HydrographyLinesNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "HydrographyLinesNames",
+      "layout":{
+        "text-field": "{text}",
+        "text-font": [
+          "Noto Sans Regular"
+        ], 
+        "text-size": [
+            "get",
+            "fontsize"
+        ],
+        "text-rotate": [
+          "get",
+          "rotation"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(0,92,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+    {#Mandatory Layerorder:38
+      "id": "ProtectedSitesNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "ProtectedSitesNames",
+      "layout":{
+        "text-field": "{text}",
+        "text-font": [
+          "Noto Sans Regular"
+        ], 
+        "text-size": [
+            "get",
+            "fontsize"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(76,115,0,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    }
+  ]
+}
