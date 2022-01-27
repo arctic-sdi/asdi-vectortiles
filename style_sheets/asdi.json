@@ -1,0 +1,30 @@
+{
+  "airports": {
+    "height": 25,
+    "pixelRatio": 1,
+    "width": 25,
+    "x": 0,
+    "y": 25
+  },
+  "heliports": {
+    "height": 20,
+    "pixelRatio": 1,
+    "width": 25,
+    "x": 30,
+    "y": 30
+  },
+  "ports": {
+    "height": 25,
+    "pixelRatio": 1,
+    "width": 20,
+    "x": 30,
+    "y": 0
+  },
+  "wetland": {
+    "height": 25,
+    "pixelRatio": 1,
+    "width": 25,
+    "x": 0,
+    "y": 0
+  }
+}
