@@ -4,8 +4,8 @@
   "sources": {
     "vt-source": {
       "type": "vector",
-      "minzoom": 0,
-      "maxzoom": 12,
+      "minzoom": 4,
+      "maxzoom": 14,
       "tiles": [
         "/4326/{z}/{y}/{x}.mvt"
       ]
@@ -21,25 +21,535 @@
         "background-color": "rgba(247, 247, 210, 1)"
       }
     },
-	    {
+
+
+	  
+ {
+      "id": "UnclassifiedAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "Unclassifiedareas",
+      "paint": {
+        "fill-color": "rgba(247, 247, 210, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "SoilSurfaceRegions_S",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "soilsurfaceregions_s",
+      "paint": {
+        "fill-color": "rgba(55, 60, 55, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "ShrubVegetation",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "shrubvegetation",
+      "paint": {
+        "fill-color": "rgba(220, 210, 140, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "Tundra",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "tundra",
+      "paint": {
+        "fill-color": "rgba(190, 185, 160, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "GrassVegetation",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "grassvegetation",
+      "paint": {
+        "fill-color": "rgba(85, 145, 90, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "AgriculturalAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "agriculturalareas",
+      "paint": {
+        "fill-color": "rgba(254, 247, 163, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "WoodForests",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "woodforests",
+      "paint": {
+        "fill-color": "rgba(211, 235, 173, 1)",
+        "fill-antialias": true
+      }
+    },
+ {
+      "id": "Wetlands",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "wetlands",
+      "paint": {
+        "fill-color": "rgba(90, 120, 190, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "GlacierSnowfields_s",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "glaciersnowfields_s",
+      "paint": {
+        "fill-color": "rgba(254, 254, 254, 1)",
+        "fill-antialias": true
+      }
+    },
+{
+      "id": "BuiltupAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "builtupareas",
+      "paint": {
+        "fill-color": "rgba(250, 217, 188, 1)",
+        "fill-antialias": true
+      }
+    },
+
+
+
+ 
+ {
+      "id": "Sea",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "sea",
+      "paint": {
+        "fill-color": "rgba(194, 233, 252, 1)",
+        "fill-antialias": true
+      }
+    },
+{
       "id": "Waterbodies",
       "type": "fill",
       "source": "vt-source",
       "source-layer": "waterbodies",
       "paint": {
         "fill-color": "rgba(194, 233, 252, 1)",
-        "fill-outline-color": "rgba(240, 29, 72, 0.8)",
+        "fill-outline-color": "rgba(137, 212, 250, 0.5)",
         "fill-antialias": true
       }
     },
-	    {
+{
+      "id": "WatercourseAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "watercourseareas",
+      "paint": {
+        "fill-color": "rgba(194, 233, 252, 1)",
+        "fill-outline-color": "rgba(137, 212, 250, 0.5)",
+        "fill-antialias": true
+      }
+    },
+    
+
+
+{
+      "id": "ProtectedSites",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "protectedsites",
+      "paint": {
+        "fill-color": "rgba(190, 75, 45, 1)",
+        "fill-antialias": true
+      }
+    },
+    
+   
+    
+{
+      "id": "AerodromeAreas",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "aerodromeareas",
+      "paint": {
+        "fill-color": "rgba(250, 217, 188, 1)",
+        "fill-antialias": true
+      }
+    },
+
+
+	  
+{
+      "id": "GlacierSnowfields_c",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "glaciersnowfields_c",
+      "paint": {
+	"line-color": "rgba(254, 254, 254, 1)",
+        "line-width": 1.0
+      }
+    },
+{
+      "id": "SoilSurfaceRegions_c",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "soilsurfaceregions_c",
+      "paint": {
+        "line-color": "rgba(55, 60, 55, 1)",
+        "line-width": 1.0
+      }
+    },
+
+   
+   
+{
+      "id": "WatercourseLines",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "watercourselines",
+      "paint": {
+        "line-color": "rgba(137, 212, 250, 1)",
+        "line-width": 1.0
+      }
+    },
+{
+      "id": "Coastline",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "coastline",
+      "paint": {
+        "line-color": "rgba(137, 212, 250, 1)",
+        "line-width": 0.5
+      }
+    },
+{
+      "id": "TerrainContours",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "terraincontours",
+      "paint": {
+        "line-color": "rgba(140, 100, 30, 1)",
+        "line-width": 0.8
+      }
+    },
+    {
+      "id": "GlacierContours",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "glaciercontours",
+      "paint": {
+        "line-color": "rgba(50, 180, 220, 1)",
+        "line-width": 0.8
+      }
+    },
+
+
+	  
+    
+    {
+      "id": "FerryCrossings",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "ferrycrossings",
+      "paint": {
+        "line-color": "rgba(123, 179, 234, 1)",
+        "line-width": 1.0,
+        "line-dasharray": [6,5]
+      }
+    },
+    {
       "id": "MainRoads",
       "type": "line",
       "source": "vt-source",
-      "source-layer": "mainRoads",
+      "source-layer": "mainroads",
+      "paint": {
+        "line-color": "rgba(150, 150, 150, 1)",
+        "line-width": 3.0
+      }
+    },
+    {
+      "id": "RegionalRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "regionalroads",
       "paint": {
         "line-color": "rgba(255, 158, 158, 1)",
         "line-width": 2.0
+      }
+    },
+    {
+      "id": "LocalRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "localroads",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 0.8
+      }
+    },
+{
+      "id": "NonRegularRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "nonregularroads",
+      "paint": {
+	"line-color": "rgba(200, 158, 158, 1)",
+        "line-width": 1.0,
+        "line-dasharray": [6,5]
+      }
+    },
+    {
+      "id": "RailwayLines",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "railwaylines",
+      "paint": {
+        "line-color": "rgba(160, 160, 160, 1)",
+        "line-width": 1.8
+      }
+    },
+    {
+      "id": "RunwayLines",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "runwaylines",
+      "paint": {
+        "line-color": "rgba(133, 133, 133, 1)",
+        "line-width": 2.0
+      }
+    },
+    {
+      "id": "Sub-NationalBoundaries",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "sub_nationalboundaries",
+      "paint": {
+        "line-color": "rgba(152, 102, 152, 1)",
+        "line-width": 1.0
+      }
+    },
+    {
+      "id": "NationalBoundaries",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "nationalboundaries",
+      "paint": {
+        "line-color": "rgba(217, 217, 217, 1)",
+        "line-width": 6.0
+      }
+    },
+
+
+
+	  
+{
+      "id": "PopulatedPlaces",
+      "type": "circle",
+      "source": "vt-source",
+      "source-layer": "populatedplaces",
+      "paint": {
+        "circle-color": "rgba(50, 50, 50, 1)",
+        "circle-radius": 8.0
+      }
+    },
+
+
+	  
+{
+      "id": "RailwayStations",
+      "type": "circle",
+      "source": "vt-source",
+      "source-layer": "railwaystations",
+      "paint": {
+        "circle-color": "rgba(160, 160, 160, 1)",
+        "circle-radius": 4.0
+      }
+    },
+{
+      "id": "Airports",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "airports",
+      "paint":{
+        "circle-color": "rgba(220, 50, 220, 1)",
+        "circle-radius": 3.0
+      }
+    },
+{
+      "id": "Heliports",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "heliports",
+      "paint":{
+        "circle-color": "rgba(60, 190, 30, 1)",
+        "circle-radius": 3.0
+      }
+    },
+{
+      "id": "SeaplaneBases",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "seaplanebases",
+      "paint":{
+        "circle-color": "rgba(245, 27, 71, 1)",
+        "circle-radius": 3.0
+      }
+    },
+{
+      "id": "Ports",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "ports",
+      "paint":{
+        "circle-color": "rgba(210, 150, 1, 1)",
+        "circle-radius": 5.0
+      }
+    },
+
+
+
+	  
+{
+      "id": "PopulatedPlacesNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "populatedplacesnames",
+      "layout":{
+        "text-field": "{text}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(70,70,70,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+{
+      "id": "OrographyObjectsNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "orographyobjectsnames",
+      "layout":{
+        "text-field": "{textstring}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(50,50,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+{
+      "id": "PortsNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "portsnames",
+      "layout":{
+        "text-field": "{textstring}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(50,50,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+{
+      "id": "RailwayStationsNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "railwaystationsnames",
+      "layout":{
+        "text-field": "{textstring}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(50,50,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "HydrographyNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "hydrographynames",
+      "layout":{
+        "text-field": "{text}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(0,92,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "HydroeliefObjectsNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "hydroreliefobjectsnames",
+      "layout":{
+        "text-field": "{textstring}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(0,92,235,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "ProtectedSitesNames",
+      "type": "symbol",
+      "source": "vt-source",
+      "source-layer": "protectedareasnames",
+      "layout":{
+        "text-field": "{textstring}",
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color":"rgba(76,115,0,1)",
+        "text-halo-blur":0.5,
+        "text-halo-color":"rgba(250,250,250,0.95)",
+        "text-halo-width":1.25,
+        "text-opacity": 1
       }
     }
   ]
