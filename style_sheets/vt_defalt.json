@@ -1,0 +1,46 @@
+{
+  "version": 8,
+
+  "sources": {
+    "vt-source": {
+      "type": "vector",
+      "minzoom": 0,
+      "maxzoom": 12,
+      "tiles": [
+        "/4326/{z}/{y}/{x}.mvt"
+      ]
+    }
+  },
+  "sprite": "/style/asdi",
+  "glyphs": "/style/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(247, 247, 210, 1)"
+      }
+    },
+	    {
+      "id": "Waterbodies",
+      "type": "fill",
+      "source": "vt-source",
+      "source-layer": "waterbodies",
+      "paint": {
+        "fill-color": "rgba(194, 233, 252, 1)",
+        "fill-outline-color": "rgba(240, 29, 72, 0.8)",
+        "fill-antialias": true
+      }
+    },
+	    {
+      "id": "MainRoads",
+      "type": "line",
+      "source": "vt-source",
+      "source-layer": "mainRoads",
+      "paint": {
+        "line-color": "rgba(255, 158, 158, 1)",
+        "line-width": 2.0
+      }
+    }
+  ]
+}
