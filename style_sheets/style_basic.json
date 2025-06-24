@@ -20,7 +20,7 @@
     }
   },
 
-  "glyphs": "http://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+  "glyphs": "https://arcticsdi-fontserver.atkv3-dev.kartverket.cloud/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
