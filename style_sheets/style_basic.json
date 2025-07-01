@@ -4,8 +4,8 @@
   "sources": {
     "vt-source": {
       "type": "vector",
-      "minzoom": 4,
-      "maxzoom": 14,
+      "minzoom": 10,
+      "maxzoom": 12,
       "tiles": [
         "https://arcticsdi.atkv3-dev.kartverket.cloud/unclassifiedareas,soilsurfaceregions_s,shrubvegetation,tundravegetation,grassvegetation,agriculturalareas,woodforests,wetlands,glaciersnowfields_s,builtupareas,sea,waterbodies,watercourseareas,protectedsites,aerodromeareas,glaciersnowfields_c,soilsurfaceregions_c,watercourselines,coastline,terraincontours,glaciercontours,ferrycrossings,mainroads,regionalroads,localroads,nonregularroads,railwaylines,runwaylines,sub_nationalboundaries,nationalboundaries,populatedplaces,railwaystations,airports,heliports,seaplanebases,ports,populatedplacesnames,orographyobjectsnames,portsnames,railwaystationsnames,hydrographynames,hydroreliefobjectsnames,protectedareasnames/{z}/{x}/{y}"
       ]
@@ -13,7 +13,7 @@
 	 "fjellskygge_cache": {
       "type": "raster",
 	  "minzoom": 4,
-      "maxzoom": 14,
+      "maxzoom": 12,
       "tiles": [
         "https://server.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}"
       ]
